@@ -1,0 +1,119 @@
+
+Run cpplint
+
+./timelib.c:172:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+./timelib.c:177:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+Done processing ./bitpacking.c
+Done processing ./planner.c
+Done processing ./timelib.c
+Done processing ./timelib.h
+Total errors found: 2
+
+Run clang-tidy
+
+12 warnings generated.
+81 warnings generated.
+81 warnings generated.
+93 warnings generated.
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:9: error: 12 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:16: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+               ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:20: error: 29 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                   ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:24: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                       ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:28: error: 30 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                           ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:32: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                               ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:36: error: 30 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                   ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:40: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                       ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:44: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                           ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:48: error: 30 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                               ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:52: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                                   ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:56: error: 30 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                                       ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:140:60: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int v[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                                           ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:9: error: 12 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:16: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+               ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:20: error: 28 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                   ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:24: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                       ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:28: error: 30 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                           ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:32: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                               ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:36: error: 30 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                   ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:40: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                       ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:44: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                           ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:48: error: 30 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                               ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:52: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                                   ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:56: error: 30 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                                       ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:141:60: error: 31 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  int a[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+                                                           ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:143:37: error: 60 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  copie = copie + datatz.time.min * 60;
+                                    ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:144:38: error: 3600 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  copie = copie + datatz.time.hour * 3600;
+                                     ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:146:13: error: 1970 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  for (an = 1970; an < datatz.date.year; ++an) {
+            ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:147:30: error: 100 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+    if ((an % 4 == 0 && an % 100 != 0) || an % 400 == 0) {
+                             ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:147:48: error: 400 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+    if ((an % 4 == 0 && an % 100 != 0) || an % 400 == 0) {
+                                               ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:155:55: error: 100 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+  if (datatz.date.year % 4 == 0 && datatz.date.year % 100 != 0) {
+                                                      ^
+/home/alex/PCLP-Tema2/t2_schelet/timelib.c:177:53: error: 3600 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,-warnings-as-errors]
+   copie = copie - datatz.tz->utc_hour_difference * 3600;
+                                                    ^
+Suppressed 36 warnings (36 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+33 warnings treated as errors

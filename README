@@ -1,0 +1,58 @@
+TASK 1 
+    daca timestamp e mai mare ca o zi il reducem astfel incat sa ramana mai mic ca o zi
+    facem operatii asupra timestampului 
+
+TASK 2
+    anul il luam dintr o impartire
+    pentru luni facem impartiri repetate dupa niste consitii si incrementam un i
+    pt zile luam ce a ramas din timestamp
+
+TASK 3
+    analog TASK 2 dar mai adaugam conditiile de an bisect
+
+TASK 4
+    Adaugam la timestamp diferenta dinre timezonul respectiv si UTC
+    aoelam functiile de la TASK1 si TASK 3
+
+TASK 5 
+    adaugam la timestamp timpul (ora minutul si secundele) apoi facem operatia inversa
+        de la TASK 3
+
+TASK 6 
+    avem 12 ifuri ce verifica ce numar avem la luna si salvam in stringul s luna 
+        corespunzatoare scrisa in litere
+    afisam restul
+
+TASK 7
+    alocam un vector de unsigned inturi egal cu numarul de date ce vor fi citite
+    am predefinit constante ce au reprezentarea pe biti astfel incat atunci cand facem 
+        si pe biti si mutam bitii la dreapta sa ramana doar numaruul ce ne intereseaza
+        De exemplu daca vrem a aflam ce luna vine in unsigned intul introdus luam
+        pentru masca valoarea 480 deoarece in binar este 1111 00000
+    sortam datele date
+TASK 8
+    asemenea TASK 7 dar acum un unsigned int contine mai multe date si o fractiune din una
+    Ca sa rezolvam aceasta problema alocam un vector ca la TASK 7 si pe fiecare element din vector
+        punem o singura data (adica doar 15 biti sunt folositori). Apoi mutam la dreapta cu 15 bitii
+        din intul primit si executam acest lucru pana cand nu mai putem citii in total 15 biti din uns int
+        Ce ramane e considerat rest si e salvat, iar apoi se citeste al doile unsigned int tinand cont de 
+        restul din uns intul trecut
+    De asemenea avem o structura care sa tina cont de ce unsigned inturi apartine fiecare data
+    DUpa se citesc bitii de control si se evalueaza fiecare unsigned int primit. Daca unul din
+        ele este corupt atunci avem inca un vector ce se numeste valid ce retine valabilitatea
+        unui unsigned int
+    apoi sortam datele ramase si le afisam
+
+TASK 9
+    citim vectorul de structuri pentru timezonuri
+    citim pentru fiecare persoana timezonul din care face parte, numarul de intervale in care
+        e libera, intervalele
+    in timp ce citim intervalele avem 2 variabile pentru cel mai mic timestamp si cel mai mare
+        timestamp
+    De asemenea creeam un vector alocat dinamic ce o sa contina pentru un interval timestampul 
+        din ora in ora( de exemplu daca o pers e libera la unixtimestamp 0 pentru 3 ore, in 
+        vectorul creat o sa avem uramatoarele valori: 0, 3600, 7200)
+    Dupa aflam care este cea mai devreme data la care se poate organiz evenimentul in prametrii impusi
+    Sortam vertorul de structuri al persoanelor dupa nume folosind un pointer de tipul respectiv
+    Dupa ce obtinem aceasta data verificam pentru fiecare persoana daca poate participa la eveniment, 
+        daca da, ii este afisata data in fct de data, daca nu, este afisat invalid
